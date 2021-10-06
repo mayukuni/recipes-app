@@ -22,6 +22,8 @@ function Header({ value }) {
   }
 
   function hiddenInput() {
+    // const teste = { flexWrap: 'wrap',
+    //   height: '100px' };
     if (showSearchBar) {
       return (
         <SearchBar />

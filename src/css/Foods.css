@@ -8,7 +8,8 @@ header {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  flex-wrap: wrap;
+  /* height: 50px; */
 }
 
 header button {
@@ -49,7 +50,8 @@ header button {
 }
 
 .images {
-  border-radius: 7px 7px 0px 0px;
+  /* border-radius: 7px 7px 0px 0px; */
+  border-radius: 7px 7px 0px 100px;
   width: 100%;
 }
 
@@ -85,3 +87,23 @@ footer {
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 3px;
+}
+
+.search-input {
+  width: 80%;
+}
+
+.search-button {
+  display: flex;
+  height: 20px;
+  margin: 5px 3px;
+}
+

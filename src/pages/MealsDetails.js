@@ -8,6 +8,7 @@ import { verificatioinProgressRecipe,
   verificationDoneRecipe } from '../helper/recipeStatus';
 import IngredientsAndMeasures from
   '../components/detailPageComponents/IngredientsAndMeasures';
+import '../css/MealsDetails.css';
 
 function MealsDetails() {
   const { id } = useParams();
@@ -42,7 +43,7 @@ function MealsDetails() {
     return <h1> Carregando... </h1>;
   }
   return (
-    <section>
+    <section className="details-page">
       <Header
         thumb={ recipe.strMealThumb }
         title={ recipe.strMeal }
@@ -54,23 +55,23 @@ function MealsDetails() {
       <IngredientsAndMeasures
         recipe={ recipe }
       />
-      <div>
+      <div className="intructions">
         <h1>Instructions</h1>
         <p data-testid="instructions">{recipe.strInstructions}</p>
       </div>
-      <div>
+      <div className="yt-video">
         <ReactPlayer
           url={ recipe.strYoutube }
           controls
           data-testid="video"
         />
       </div>
-      <div>
+      <div className="recommendations">
         <Recommendations
           recommendation={ recommendation }
         />
       </div>
-      <div>
+      <div className="button-start-recipe">
         {!doneRecipe && (
           <button
             style={ footerStyle }

@@ -17,15 +17,24 @@ export default function SearchBar() {
   }
 
   return (
-    <div>
+    <div className="search-bar">
       <input
         type="text"
         data-testid="search-input"
         name="searchText"
         onChange={ handleGenericInput }
+        className="search-input"
       />
+      <button
+        type="button"
+        data-testid="exec-search-btn"
+        disabled={ (searchInput.searchText.length === 0) }
+        onClick={ () => handleSearch(searchInput, location.pathname) }
+        className="search-button"
+      >
+        Buscar
+      </button>
       <label htmlFor="search-ingredients">
-        Ingredientes
         <input
           id="search-ingredients"
           type="radio"
@@ -34,9 +43,9 @@ export default function SearchBar() {
           value="ingredient"
           onChange={ handleGenericInput }
         />
+        Ingredientes
       </label>
       <label htmlFor="search-name">
-        Nome
         <input
           id="search-name"
           type="radio"
@@ -45,9 +54,9 @@ export default function SearchBar() {
           value="name"
           onChange={ handleGenericInput }
         />
+        Nome
       </label>
       <label htmlFor="search-firstLetter">
-        Primeira Letra
         <input
           id="search-firstLetter"
           type="radio"
@@ -56,15 +65,8 @@ export default function SearchBar() {
           value="firstLetter"
           onChange={ handleGenericInput }
         />
+        Primeira Letra
       </label>
-      <button
-        type="button"
-        data-testid="exec-search-btn"
-        disabled={ (searchInput.searchText.length === 0) }
-        onClick={ () => handleSearch(searchInput, location.pathname) }
-      >
-        Buscar
-      </button>
     </div>
   );
 }
