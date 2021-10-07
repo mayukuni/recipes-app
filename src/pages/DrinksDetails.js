@@ -41,7 +41,7 @@ function DrinksDetails() {
     return <h1> Carregando... </h1>;
   }
   return (
-    <section>
+    <section className="details-page">
       <Header
         thumb={ recipe.strDrinkThumb }
         title={ recipe.strDrink }
@@ -53,16 +53,16 @@ function DrinksDetails() {
       <IngredientsAndMeasures
         recipe={ recipe }
       />
-      <div>
+      <div className="intructions">
         <h1>Instructions</h1>
         <p data-testid="instructions">{recipe.strInstructions}</p>
       </div>
-      <div>
+      <div className="recommendations">
         <Recommendations
           recommendation={ recommendation }
         />
       </div>
-      <div>
+      <div className="button-start-recipe">
         {!doneRecipe && (
           <button
             style={ footerStyle }

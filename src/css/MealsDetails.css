@@ -1,3 +1,93 @@
+.details-page { 
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header-detail {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-detail h1{
+  margin-right: 150px;
+  margin-top: 8px;
+  font-size: 25px;
+  align-self: center;
+} 
+
+.header-detail h2 {
+  order: 4;
+  align-self: center;
+  width: 100%;
+  margin-top: -20px;
+  font-size: 17px;
+  font-style: italic;
+  font-family: sans-serif;
+  margin-left: 14px;
+}
+
+.header-detail input {
+  margin-bottom: 15px;
+}
+
+.ing-details {
+  margin-top: 370px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-bottom: -20px;
+}
+
+.ing-details h1 {
+  margin-bottom: -2px;
+}
+
+.ing-details ul {
+  list-style:square;
+  margin-left: -20px;
+}
+
+.intructions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  /* margin-bottom: -700px; */
+}
+
+.intructions h1 {
+  margin-bottom: 5px;
+}
+
+.intructions p {
+  width: 330px;
+  margin-left: 2px;
+}
+
+.yt-video {
+  display: flex;
+  width: 95%;
+  margin-left: 9px;
+  margin-bottom: 15px;
+}
+
+.recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+}
+
+.item {
+  width: 160px;
+  margin: 0px 8px;
+  border: 2px solid gainsboro;
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
 .recommended-area {
   overflow-x: hidden;
 }
@@ -6,11 +96,21 @@
   display: flex;
 }
 
-.item {
-  margin: 20px;
-  width: 150px;
-}
-
 .item img {
-  width: 150px;
+  width: 100%;
+  border-radius: 7px 7px 0px 100px;
+  background-color: gainsboro;
+}  
+
+.button-start-recipe button {
+  border: 1px solid gray;
+  background-color: gainsboro;
+  border-radius: 5px;
+  font-size: 17px;
+  margin: 10px;
+  width: 340px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
