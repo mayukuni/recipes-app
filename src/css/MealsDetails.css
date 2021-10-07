@@ -1,33 +1,32 @@
-.details-page { 
-  display: flex; 
-  flex-direction: column;
-  flex-wrap: wrap;
+.details-page {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .header-detail {
+  align-items: center;
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  width: 100%;
 }
 
-.header-detail h1{
+.header-detail h1 {
+  align-self: center;
+  font-size: 25px;
   margin-right: 150px;
   margin-top: 8px;
-  font-size: 25px;
-  align-self: center;
-} 
+}
 
 .header-detail h2 {
-  order: 4;
   align-self: center;
-  width: 100%;
-  margin-top: -20px;
+  font-family: sans-serif;
   font-size: 17px;
   font-style: italic;
-  font-family: sans-serif;
   margin-left: 14px;
+  margin-top: -20px;
+  order: 4;
+  width: 100%;
 }
 
 .header-detail input {
@@ -35,11 +34,11 @@
 }
 
 .ing-details {
-  margin-top: 370px;
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
   margin-bottom: -20px;
+  margin-left: 15px;
+  margin-top: 370px;
 }
 
 .ing-details h1 {
@@ -47,7 +46,7 @@
 }
 
 .ing-details ul {
-  list-style:square;
+  list-style: square;
   margin-left: -20px;
 }
 
@@ -55,6 +54,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+
   /* margin-bottom: -700px; */
 }
 
@@ -63,29 +63,29 @@
 }
 
 .intructions p {
-  width: 330px;
   margin-left: 2px;
+  width: 330px;
 }
 
 .yt-video {
   display: flex;
-  width: 95%;
-  margin-left: 9px;
   margin-bottom: 15px;
+  margin-left: 9px;
+  width: 95%;
 }
 
 .recommendations {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .item {
-  width: 160px;
-  margin: 0px 8px;
-  border: 2px solid gainsboro;
   background-color: gainsboro;
+  border: 2px solid gainsboro;
   border-radius: 10px;
+  margin: 0 8px;
+  width: 160px;
 }
 
 .recommended-area {
@@ -97,20 +97,20 @@
 }
 
 .item img {
-  width: 100%;
-  border-radius: 7px 7px 0px 100px;
   background-color: gainsboro;
-}  
+  border-radius: 7px 7px 0 100px;
+  width: 100%;
+}
 
 .button-start-recipe button {
-  border: 1px solid gray;
+  align-items: center;
   background-color: gainsboro;
+  border: 1px solid gray;
   border-radius: 5px;
+  display: flex;
   font-size: 17px;
+  height: 45px;
+  justify-content: center;
   margin: 10px;
   width: 340px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
